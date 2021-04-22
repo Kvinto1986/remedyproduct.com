@@ -114,9 +114,8 @@
     ],
     "techologies": [
       "/images/logo/tools/react.svg",
-      "React Native",
-      "FastApi",
-      "GraphQL",
+      "/images/logo/tools/fastAPI.svg",
+      "/images/logo/tools/graphQL.svg",
       "/images/logo/tools/terraform.svg",
       "/images/logo/tools/aws.svg"
     ],
@@ -164,8 +163,8 @@
     ],
     "techologies": [
       "/images/logo/tools/php.svg", 
-      "Laravel", 
-      "MongoDB", 
+      "/images/logo/tools/laravel.svg", 
+      "/images/logo/tools/mongoDB.svg", 
       "/images/logo/tools/aws.svg", 
       "/images/logo/tools/terraform.svg", 
       "/images/logo/tools/react.svg"
@@ -207,9 +206,9 @@
     "techologies": [
       "/images/logo/tools/php.svg",
       "Javascript",
-      " Slim",
-      "Laravel",
-      "MongoDB",
+      "/images/logo/tools/slim.svg",
+      "/images/logo/tools/laravel.svg",
+      "/images/logo/tools/mongoDB.svg",
       "/images/logo/tools/terraform.svg",
       "/images/logo/tools/aws.svg"
     ],
@@ -244,7 +243,7 @@
     "techologies": [
       "/images/logo/tools/react.svg",
       "/images/logo/tools/firebase.svg'",
-      "Twilio",
+      "/images/logo/tools/twilio.svg",
       "/images/logo/tools/google-maps.svg",
       "Google Places API"
     ],

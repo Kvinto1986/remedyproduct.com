@@ -4,6 +4,7 @@ import {
     startupsIcons,
     toolsLogo,
     employeesImages,
+    teamPictures,
 } from "./images"
 
 export const cardsItems = [
@@ -162,6 +163,7 @@ export const projectsInfo = {
 }
 
 export const employeesInfo = [
+    {id: 0, name: 'RPS Team and Culture'},
     {
         id: 1,
         name: 'Egor Naganov',
@@ -264,3 +266,42 @@ export const employeesInfo = [
     },
 ]
 
+export const teamDefaultIntro = 'While Remedy stands up fully dedicated people as an extension of your team, '+
+        'we also make sure that we’re heavily investing in the culture of RPS as a whole. This means that '+
+        'we invest in our people as individuals and as a team. \n \n While we seek to hire the best possible '+
+        'talent, we also understand that great developers, designers, and product managers are grown over '+
+        'time. This investment in growth and attention to a world-class culture is how we ensure we ' +
+        'continue to deliver world-class results.'
+    
+export const teamDefaultInfo = [
+    {
+        title: 'Product Manager Development',
+        image: teamPictures.teamPictureOne,
+        content: 'Every 2 weeks our Product Managers participate in structured PM meetings to aid in ' +
+                'their development. Sessions are broken down into hard skill education, soft skill ' +
+                'training, and peer-led discussions about partner-specific product questions. Topics range '+
+                'from consultative question asking and better ways to understand a partner’s true needs '+
+                'to how to best run a product-market-fit survey or conduct valuable user interviews.'
+    },
+    {
+        title: 'Hackathon',
+        image: teamPictures.teamPictureTwo,
+        content: 'We host internal, cross-functional hackathons the last Friday of every month. The '+ 
+                'hackathons are based on the premise of learning a new skill or practice and applying it '+
+                'to a real-world scenario. One of our senior team members or architects teaches a specific '+
+                'skill or presents a problem statement. The company is then broken into cross-functional '+
+                'teams (product, design, engineering, QA) and tasked with applying the lesson to a product.'
+    },
+    {
+        title: 'Continuing Education',
+        image: teamPictures.teamPictureThree,
+        content: 'Just like we believe in user feedback as an essential component of guiding product ' +
+                'development, we use team feedback as a way to improve the quality of our team members. '+
+                'We gather candid feedback on each team member from external and internal stakeholders to '+
+                'inform personal development plans. Each RPS team member goes through an annual review and '+
+                'goal setting process. The goals are designed to be tangible and actionable, including '+
+                'specific training, courses, and certifications paid for by RPS that are meant to help team '+
+                'members level up their skills and apply their knowledge to their work.'
+    }
+]
+    

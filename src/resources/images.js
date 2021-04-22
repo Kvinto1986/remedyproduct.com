@@ -75,6 +75,10 @@ import kuzmichPhoto from '../../static/images/photos/SergeyKuzmich.png';
 import protasenyaIcon from '../../static/images/avatars/employees/AlexanderProtasenya.svg';
 import protasenyaPhoto from '../../static/images/photos/AlexanderProtasenya.png';
 
+import teamPictureOne from '../../static/images/pictures/team-picture-1.png';
+import teamPictureTwo from '../../static/images/pictures/team-picture-2.png';
+import teamPictureThree from '../../static/images/pictures/team-picture-3.png';
+
 import androidLogo from '../../static/images/logo/tools/android.svg'
 import angularLogo from '../../static/images/logo/tools/angular.svg'
 import firebaseLogo from '../../static/images/logo/tools/firebase.svg'
@@ -195,4 +199,10 @@ export const toolsLogo = {
     phpLogo,
     pythonLogo,
     reactLogo
+}
+
+export const teamPictures = {
+    teamPictureOne,
+    teamPictureTwo,
+    teamPictureThree
 }
