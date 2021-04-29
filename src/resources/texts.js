@@ -200,10 +200,10 @@ export const employeesInfo = [
     },
     {
         id: 3,
-        name: 'Oleg Kruk',
+        name: 'Oleg Krook',
         photo: employeesImages.krukPhoto,
         avatar: employeesImages.krukIcon,
-        position: 'Managing Partner, Head of Product',
+        position: 'Managing Partner, Head of Engineering',
         intro: 'Oleg Krook is Co-Founder and Managing Partner (Head of Engineering) of Remedy Product Studio. Oleg has ' +
             'over 20 years of technical experience, during which he has played key roles in architecting complex ' +
             'systems, creating engineering culture, and scaling technical solutions to millions of users. \n \n As Director' +
