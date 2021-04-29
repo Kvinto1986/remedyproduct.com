@@ -51,6 +51,7 @@ import threeIcon from '../../static/images/icons/startups/pic-3.svg';
 import fourIcon from '../../static/images/icons/startups/pic-4.svg';
 import startupsPictureOne from '../../static/images/pictures/startups-picture-1.png';
 import startupsPictureTwo from '../../static/images/pictures/startups-picture-2.png';
+import startupsPictureThree from '../../static/images/pictures/startups-picture-3.png';
 
 import investmentPicture from '../../static/images/pictures/investment-picture.png';
 
@@ -71,6 +72,12 @@ import zaytsevIcon from '../../static/images/avatars/employees/SergeyZaytsev.svg
 import zaytsevPhoto from '../../static/images/photos/SergeyZaytsev.png';
 import kuzmichIcon from '../../static/images/avatars/employees/SergeyKuzmich.svg';
 import kuzmichPhoto from '../../static/images/photos/SergeyKuzmich.png';
+import protasenyaIcon from '../../static/images/avatars/employees/AlexanderProtasenya.svg';
+import protasenyaPhoto from '../../static/images/photos/AlexanderProtasenya.png';
+
+import teamPictureOne from '../../static/images/pictures/team-picture-1.png';
+import teamPictureTwo from '../../static/images/pictures/team-picture-2.png';
+import teamPictureThree from '../../static/images/pictures/team-picture-3.png';
 
 import androidLogo from '../../static/images/logo/tools/android.svg'
 import angularLogo from '../../static/images/logo/tools/angular.svg'
@@ -148,7 +155,8 @@ export const startupsIcons = {
     threeIcon,
     fourIcon,
     startupsPictureOne,
-    startupsPictureTwo
+    startupsPictureTwo,
+    startupsPictureThree,
 }
 
 export const investmentIcon = {
@@ -175,7 +183,9 @@ export const employeesImages = {
     kuzmichIcon,
     kuzmichPhoto,
     zaytsevIcon,
-    zaytsevPhoto
+    zaytsevPhoto,
+    protasenyaIcon,
+    protasenyaPhoto
 }
 
 export const toolsLogo = {
@@ -189,4 +199,10 @@ export const toolsLogo = {
     phpLogo,
     pythonLogo,
     reactLogo
+}
+
+export const teamPictures = {
+    teamPictureOne,
+    teamPictureTwo,
+    teamPictureThree
 }

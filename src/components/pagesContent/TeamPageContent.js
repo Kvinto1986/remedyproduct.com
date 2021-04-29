@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Accordion, Card, Col, Container, Image, ListGroup, Row} from "react-bootstrap";
-import {employeesInfo} from "../../resources/texts";
+import {employeesInfo, teamDefaultIntro, teamDefaultInfo} from "../../resources/texts";
 import {featuresList} from "./CompanyInfo";
 import "../../styles/teamPage.css"
 import arrowDown from '../../../static/images/icons/arrowDown.svg'
@@ -23,6 +23,33 @@ const TeamPageContent = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    const IntroPage = () => {
+        console.log(windowSize)
+        return (
+            <Container>
+                <Row>
+                    <Col md={12} className="d-none d-lg-block">
+                        <h2 style={{textAlign:'left'}} className="mb-3">{currentEmployee.name}</h2>
+                    </Col>
+                    <Col>
+                        <p style={{whiteSpace: 'pre-line'}} className={!windowSize ? "indentBottom mt-5" : "indentBottom"}>{teamDefaultIntro}</p>
+                    </Col>
+                </Row>
+                {teamDefaultInfo.map((item, i) => (
+                    <Row className={ i !== teamDefaultInfo.length-1 ? "indentBottom" : "mb-2"} key={i}>
+                    <Col md={4} sm={12}>
+                        <Image src={item.image} className="imgIntro"/>
+                    </Col>
+                    <Col md={8} sm={12}>
+                        <h6 className="subtitle">{item.title}</h6>
+                        <p>{item.content}</p>
+                    </Col>
+                </Row>
+                ))}
+            </Container>
+        )
+    }
+
     const TeamList = () => {
         return <ListGroup>
             {
@@ -37,13 +64,20 @@ const TeamPageContent = () => {
                             key={elem.id}
                             onClick={() => handleChangeEmployee(employeesInfo[index])}>
                             <Row className=''>
-                                <Col md={4} sm={3} xs={3} className=''><Image src={elem.avatar} className='mt-2 mb-2'
-                                                                              width={50} rounded/></Col>
-                                <Col md={8} sm={7} xs={7}
-                                     className="d-flex flex-wrap justify-content-center align-content-center">
-                                    <span className="employeeName">{elem.name}</span>
-                                    <span className="employeePosition">{elem.position}</span>
-                                </Col>
+                                {elem.id === 0 ? 
+                                    <Col md={12} sm={12} xs={12}
+                                    className="d-flex flex-wrap justify-content-center align-content-center ">
+                                        <span className="defaultTitle">{elem.name}</span>
+                                    </Col>
+                                : 
+                                    <><Col md={4} sm={3} xs={3} className=''><Image src={elem.avatar} className='mt-2 mb-2'
+                                    width={50} rounded/></Col> 
+                                    <Col md={8} sm={7} xs={7}
+                                        className="d-flex flex-wrap justify-content-center align-content-center">
+                                        <span className="employeeName">{elem.name}</span>
+                                        <span className="employeePosition">{elem.position}</span>
+                                    </Col></>
+                                }
                             </Row>
                         </ListGroup.Item>
                     }
@@ -57,9 +91,18 @@ const TeamPageContent = () => {
         return <Accordion className='container-fluid'>
             <Accordion.Toggle eventKey="0" style={{backgroundColor: '#d7d8dc'}}
                               className='container ml-sm-3 accordionToggle'>
-                <Row>
+                {currentEmployee.id === 0 ? 
+                    <Row style={{height:'50px'}}>
+                    <Col sm={10} xs={10} className="d-flex flex-wrap justify-content-center align-content-center">
+                        <span className="defaultLink">{currentEmployee.name}</span>
+                    </Col>
+                    <Col className="d-flex flex-wrap justify-content-center align-content-center">
+                        <Image src={arrowDown} className='mt-2 mb-2' width={20}/>
+                    </Col>
+                </Row>
+                : <Row>
                     <Col sm={2} xs={3}><Image src={currentEmployee.avatar} className='mt-2 mb-2' width={50}
-                                              rounded/></Col>
+                                            rounded/></Col>
                     <Col sm={8} xs={7} className="d-flex flex-wrap justify-content-center align-content-center">
                         <span className="employeeName">{currentEmployee.name}</span>
                         <span className="employeePosition">{currentEmployee.position}</span>
@@ -68,6 +111,8 @@ const TeamPageContent = () => {
                         <Image src={arrowDown} className='mt-2 mb-2' width={20}/>
                     </Col>
                 </Row>
+                }
+                
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
                 <TeamList/>
@@ -76,6 +121,7 @@ const TeamPageContent = () => {
     }
 
     return (
+        
         <Container className='mt-5'>
             <Row className='mb-3 mt-5'>
                 {windowSize ? <Col sm={3} className='mb-5 mt-3'><TeamList/></Col> : <TeamAccordion/>}
@@ -83,18 +129,21 @@ const TeamPageContent = () => {
                     style={!windowSize ? {border: 'none'} : {borderLeft: '#ACCCFB solid 2px'}}
                     className='mb-5 d-flex flex-column justify-content-start'
                 >
+                    {currentEmployee.id === 0 ? <IntroPage />
+                    : 
+                    <>
                     <Row className='mt-3'>
-                        <Col xl={3} lg={4} xs={7} className='d-flex justify-content-start ml-sm-3'>
+                        <Col xl={4} lg={4} xs={7} className='d-flex justify-content-start ml-sm-3 imgPhoto'>
                             <Image src={currentEmployee.photo} rounded/>
                         </Col>
-                        <Col lg={7} xs={4} className='ml-3'>
+                        <Col lg={6} xs={4} className='ml-3'>
                             {
                                 windowSize && <>
                                     <h2>{currentEmployee.name}</h2>
-                                    <h5>{currentEmployee.position}</h5>
+                                    <h5 className="subtitle">{currentEmployee.position}</h5>
                                 </>
                             }
-                            <h6 className='mt-lg-4'>Area of Expertise</h6>
+                            <h6 className='mt-lg-4 subtitle'>Area of Expertise</h6>
                             <div className='d-flex flex-wrap'>
                                 {featuresList(currentEmployee.expertise)}
                             </div>
@@ -103,20 +152,20 @@ const TeamPageContent = () => {
                     <Row className='mb-5'>
                         <Col className='ml-sm-3'>
                             <p style={{whiteSpace: 'pre-line'}} className='mt-3 '>{currentEmployee.intro}</p>
-                            {currentEmployee.methodologies && <><h6>Methodologies</h6>
+                            {currentEmployee.methodologies && <><h6 className="subtitle">Methodologies</h6>
                                 <p>{currentEmployee.methodologies}</p></>}
-                            {currentEmployee.interests && <><h6>Area of interests</h6>
+                            {currentEmployee.interests && <><h6 className="subtitle">Area of interests</h6>
                                 <ul>
                                     {currentEmployee.interests.map((elem, i) => {
                                         return <li key={i}>{elem}</li>
                                     })}</ul>
                             </>}
                             {currentEmployee.projects && <>
-                                <h6 className='mt-4'>Projects</h6>
+                                <h6 className='mt-4 subtitle'>Projects</h6>
                                 <Row>
                                     {currentEmployee.projects.map((elem, i) => {
                                         if (windowSize) {
-                                            return <Card className='ml-3 projectCard mt-3' style={{width: '10.5rem'}} key={i}>
+                                            return <Card className='ml-4 projectCard mt-3' style={{width: '10.5rem'}} key={i}>
                                                 <Card.Img variant="top" src={elem.image}/>
                                                 <Col>
                                                     <h6 className='mt-2'>{elem.name}</h6>
@@ -145,6 +194,8 @@ const TeamPageContent = () => {
                             </>}
                         </Col>
                     </Row>
+                    </>
+}
                 </Col>
             </Row>
         </Container>
