@@ -253,12 +253,10 @@ export const employeesInfo = [
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Back-end & DevOps engineering', 'SaaS solutions', 'Processes automatization',
             'Private CRM tools'],
-        projects: [
-            // projectsInfo.onePlayce, 
-            // projectsInfo.zeamo, 
-            projectsInfo.mbaMission],
-        tools: [toolsLogo.firebaseLogo, toolsLogo.kotlinLogo, toolsLogo.reactLogo, toolsLogo.html5Logo,
-            toolsLogo.phpLogo, toolsLogo.androidLogo, toolsLogo.iosLogo]
+        // projects: [
+        //     projectsInfo.onePlayce, 
+        //     projectsInfo.zeamo, 
+        //     projectsInfo.mbaMission]
     },
     {
         id: 5,
@@ -292,12 +290,12 @@ export const employeesInfo = [
         interests: ['Product Development', 'Market analysis', 'Psychology', 'Modern theatre'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'Govtech', 'Senior Tech', 'Media & Entertainment'],
-        projects: [
-            // projectsInfo.supersystem, 
-            // projectsInfo.healthReveal, 
-            // projectsInfo.sunny, 
-            // projectsInfo.grandCentral
-        ],
+        // projects: [
+        //     projectsInfo.supersystem, 
+        //     projectsInfo.healthReveal, 
+        //     projectsInfo.sunny, 
+        //     projectsInfo.grandCentral
+        // ],
     },
     {
         id: 7,
@@ -312,10 +310,10 @@ export const employeesInfo = [
         interests: ['Product Development', 'Risk Management', 'Board and Computer Games', 'Sports Mafia', 'Snowboarding'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
-        projects: [
-            // projectsInfo.vend, 
-            // projectsInfo.gradGab
-        ]
+        // projects: [
+        //     projectsInfo.vend, 
+        //     projectsInfo.gradGab
+        // ]
     },
     {
         id: 8,
@@ -328,10 +326,10 @@ export const employeesInfo = [
         interests: ['Product analytics', 'Problem solving', 'Planning', 'Sport activities', 'Travelling'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'Fitness', 'Education', 'Media & Entertainment'],
-        projects: [
-            // projectsInfo.everyMother, 
-            // projectsInfo.grandCentral
-        ],
+        // projects: [
+        //     projectsInfo.everyMother, 
+        //     projectsInfo.grandCentral
+        // ],
     },
     {
         id: 9,
@@ -346,11 +344,11 @@ export const employeesInfo = [
         interests: ['Software development', 'Christianity', 'Quantum mechanics', 'Movie comics'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Backend development', 'DevOps', 'Software Architecture'],
-        projects: [
-            // projectsInfo.zeamo, 
-            // projectsInfo.gradGab, 
-            // projectsInfo.healthReveal
-        ],
+        // projects: [
+        //     projectsInfo.zeamo, 
+        //     projectsInfo.gradGab, 
+        //     projectsInfo.healthReveal
+        // ],
     },
     {
         id: 10,
@@ -364,9 +362,9 @@ export const employeesInfo = [
         interests: ['Embedded systems programming', 'Skiing'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Backend development', 'Data analysis', 'Embedded systems'],
-        projects: [
-            // projectsInfo.healthReveal
-        ],
+        // projects: [
+        //     projectsInfo.healthReveal
+        // ],
     },
 ]
 
