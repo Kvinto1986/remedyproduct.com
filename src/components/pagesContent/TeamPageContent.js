@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Accordion, Card, Col, Container, Image, ListGroup, Row} from "react-bootstrap";
+import Link from "gatsby-link";
 import {employeesInfo, teamDefaultIntro, teamDefaultInfo} from "../../resources/texts";
 import {featuresList} from "./CompanyInfo";
 import "../../styles/teamPage.css"
@@ -165,21 +166,25 @@ const TeamPageContent = () => {
                                 <Row>
                                     {currentEmployee.projects.map((elem, i) => {
                                         if (windowSize) {
-                                            return <Card className='ml-4 projectCard mt-3' style={{width: '10.5rem'}} key={i}>
-                                                <Card.Img variant="top" src={elem.image}/>
+                                            return <Card className='ml-4 projectCard mt-3' style={{width: '12rem'}} key={i}>
+                                                <Link to={`/${elem.url}`} >
+                                                <Card.Img variant="top" src={elem.image} style={{height: '7rem'}}/>
                                                 <Col>
                                                     <h6 className='mt-2'>{elem.name}</h6>
                                                     <p className='employeePosition mr-2'>{elem.info}</p>
                                                 </Col>
+                                                </Link>
                                             </Card>
                                         } else {
-                                            return <Row className='projectCard mt-3 ml-3 mr-3' key={i}>
-                                                <Image className='m-1' fluid src={elem.image}/>
-                                                <Col xs={6} className='mt-3'>
-                                                    <h6 className=''>{elem.name}</h6>
-                                                    <p className='employeePosition'>{elem.info}</p>
-                                                </Col>
+                                            return <Link to={`/${elem.url}`}>
+                                                <Row className='projectCard mt-3 ml-3 mr-3' key={i}>
+                                                <Image className='m-1 imgCollapse' fluid src={elem.image}/>
+                                                    <Col xs={7} className='mt-3'>
+                                                        <h6 className=''>{elem.name}</h6>
+                                                        <p className='employeePosition'>{elem.info}</p>
+                                                    </Col>
                                             </Row>
+                                            </Link>
                                         }
                                     })}
                                 </Row>
