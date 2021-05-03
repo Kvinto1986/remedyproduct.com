@@ -123,7 +123,8 @@ export const projectsInfo = {
     classpass: {
         name: 'Classpass',
         image: productsPictures.classpassInfo,
-        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.',
+        url: 'classpass'
     },
     gradGab: {
         name: 'GradGab',
@@ -137,18 +138,21 @@ export const projectsInfo = {
     },
     ritual: {
         name: 'Ritual',
-        image: productsPictures.classpassInfo,
-        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+        image: productsPictures.ritualPicture,
+        info: 'Ritual is a cross-platform mobile application with a range of audio guided practices that can help boost and sustain wellbeing.',
+        url: 'ritual'
     },
     mbaMission: {
         name: 'MbaMission',
-        image: productsPictures.classpassInfo,
-        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+        image: productsPictures.mbamissionPicture,
+        info: 'Today mbaMission is the number-one-ranked firm on GMAT Club, with more than 1,000 five-star reviews.',
+        url: 'mbamission'
     },
     walkli: {
         name: 'Walkli',
-        image: productsPictures.vendInfo,
-        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+        image: productsPictures.walkliPicture,
+        info: 'Walkli provides free walking routes for travelers exploring the world on foot in search of local, authentic travel experiences. ',
+        url: 'walkli'
     },
     onePlayce: {
         name: 'OnePlayce',
@@ -159,25 +163,50 @@ export const projectsInfo = {
         name: 'Health Reveal',
         image: productsPictures.classpassInfo,
         info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
-    }
+    },
+    supersystem: {
+        name: 'Supersystem',
+        image: productsPictures.vendInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    sunny: {
+        name: 'Sunny',
+        image: productsPictures.classpassInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    grandCentral: {
+        name: 'GrandCentral',
+        image: productsPictures.classpassInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    everyMother: {
+        name: 'Every Mother',
+        image: productsPictures.vendInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
 }
 
 export const employeesInfo = [
     {id: 0, name: 'RPS Team and Culture'},
     {
         id: 1,
-        name: 'Egor Naganov',
-        photo: employeesImages.naganovPhoto,
-        avatar: employeesImages.naganovIcon,
-        position: 'Product Manager',
-        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
-            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
-            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
-            ' to this days. Egor has 6 years of total experinece.',
-        interests: ['Product Development', 'Risk Management', 'Board and Computer Games', 'Sports Mafia', 'Snowboarding'],
-        methodologies: 'Agile, Waterfall, Kanban',
-        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
-        projects: [projectsInfo.vend, projectsInfo.gradGab]
+        name: 'Oleg Krook',
+        photo: employeesImages.krukPhoto,
+        avatar: employeesImages.krukIcon,
+        position: 'Managing Partner, Head of Engineering',
+        intro: 'Oleg Krook is Co-Founder and Managing Partner (Head of Engineering) of Remedy Product Studio. Oleg has ' +
+            'over 20 years of technical experience, during which he has played key roles in architecting complex ' +
+            'systems, creating engineering culture, and scaling technical solutions to millions of users. \n \n As Director' +
+            ' of Engineering at Classpass, Oleg helped the company grow from Seed to Series B by solving key technical ' +
+            'challenges, such as delivering the first API services for the initial mobile app and leading a team of ' +
+            'engineers in creating a flexible membership model. As CTO at Block Six Analytics, Oleg built an agile ' +
+            'product and engineering team to integrate their R&D Machine Learning department into the development ' +
+            'cycle. As CTO at Zeamo, Oleg introduced microservice architecture to support the rapid development of ' +
+            'business goals and objectives. Oleg previously served in engineering leadership roles at Amplify ' +
+            'Education and Coherent Solutions.\n \n Oleg has a degree in Computer Science from Belarus State University.' +
+            ' He lives in New Jersey with his daughter Michelle, dog Chucky, and cat Ginger. He enjoys Formula 1 ' +
+            'Racing, Sci-Fi movies, and driving like he’s a stuntman in the Fast and the Furious.',
+        expertise: ['Healthcare', 'Wellness', 'Sports'],
     },
     {
         id: 2,
@@ -200,23 +229,17 @@ export const employeesInfo = [
     },
     {
         id: 3,
-        name: 'Oleg Krook',
-        photo: employeesImages.krukPhoto,
-        avatar: employeesImages.krukIcon,
-        position: 'Managing Partner, Head of Engineering',
-        intro: 'Oleg Krook is Co-Founder and Managing Partner (Head of Engineering) of Remedy Product Studio. Oleg has ' +
-            'over 20 years of technical experience, during which he has played key roles in architecting complex ' +
-            'systems, creating engineering culture, and scaling technical solutions to millions of users. \n \n As Director' +
-            ' of Engineering at Classpass, Oleg helped the company grow from Seed to Series B by solving key technical ' +
-            'challenges, such as delivering the first API services for the initial mobile app and leading a team of ' +
-            'engineers in creating a flexible membership model. As CTO at Block Six Analytics, Oleg built an agile ' +
-            'product and engineering team to integrate their R&D Machine Learning department into the development ' +
-            'cycle. As CTO at Zeamo, Oleg introduced microservice architecture to support the rapid development of ' +
-            'business goals and objectives. Oleg previously served in engineering leadership roles at Amplify ' +
-            'Education and Coherent Solutions.\n \n Oleg has a degree in Computer Science from Belarus State University.' +
-            ' He lives in New Jersey with his daughter Michelle, dog Chucky, and cat Ginger. He enjoys Formula 1 ' +
-            'Racing, Sci-Fi movies, and driving like he’s a stuntman in the Fast and the Furious.',
-        expertise: ['Healthcare', 'Wellness', 'Sports'],
+        name: 'Alexander Stogov',
+        photo: employeesImages.stogovPhoto,
+        avatar: employeesImages.stogovIcon,
+        position: 'Director of Operations',
+        intro: 'Alexander is one of the co-founders of the Minsk office of Remedy Product. Graduated from ' +
+                'the Belarusian State University with a degree in mathematical electronics. \n \n ' +
+                'He lives in Minsk with his wife Olga and daughters Eva and Albina. In addition to working ' +
+                'for RPS, owns a wholesale company selling stationery and invests in real estate. For a long ' +
+                'time, Alexander was actively involved in football and hockey. He enjoys hiking and ' +
+                'traveling by car, he has been to more than 40 countries so far.',
+        expertise: ['Investments', 'Traveling', 'Sports'],
     },
     {
         id: 4,
@@ -230,9 +253,10 @@ export const employeesInfo = [
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Back-end & DevOps engineering', 'SaaS solutions', 'Processes automatization',
             'Private CRM tools'],
-        projects: [projectsInfo.onePlayce, projectsInfo.zeamo, projectsInfo.mbaMission],
-        tools: [toolsLogo.firebaseLogo, toolsLogo.kotlinLogo, toolsLogo.reactLogo, toolsLogo.html5Logo,
-            toolsLogo.phpLogo, toolsLogo.androidLogo, toolsLogo.iosLogo]
+        // projects: [
+        //     projectsInfo.onePlayce, 
+        //     projectsInfo.zeamo, 
+        //     projectsInfo.mbaMission]
     },
     {
         id: 5,
@@ -246,11 +270,69 @@ export const employeesInfo = [
         interests: ['Analytics and SEO', 'Rafting', 'Eurotrips', 'Books & Movies'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'Wellness', 'Data & Analytics', 'Education', 'Fitness'],
-        projects: [projectsInfo.zeamo, projectsInfo.ritual, projectsInfo.mbaMission, projectsInfo.walkli,
-            projectsInfo.onePlayce],
+        projects: [
+            // projectsInfo.zeamo, 
+            projectsInfo.ritual, 
+            projectsInfo.mbaMission, 
+            projectsInfo.walkli,
+            // projectsInfo.onePlayce
+        ],
     },
     {
         id: 6,
+        name: 'Anna Korzhenevskaya',
+        photo: employeesImages.korzhenevskayaPhoto,
+        avatar: employeesImages.korzhenevskayaIcon,
+        position: 'Product Manager',
+        intro: 'Product Manager with Business Development and IT sales background. Experienced in managing ' +
+                'international technical development teams in connection with the Design and Marketing ' +
+                'departments. ',
+        interests: ['Product Development', 'Market analysis', 'Psychology', 'Modern theatre'],
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'Govtech', 'Senior Tech', 'Media & Entertainment'],
+        // projects: [
+        //     projectsInfo.supersystem, 
+        //     projectsInfo.healthReveal, 
+        //     projectsInfo.sunny, 
+        //     projectsInfo.grandCentral
+        // ],
+    },
+    {
+        id: 7,
+        name: 'Egor Naganov',
+        photo: employeesImages.naganovPhoto,
+        avatar: employeesImages.naganovIcon,
+        position: 'Product Manager',
+        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
+            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
+            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
+            ' to this days. Egor has 6 years of total experinece.',
+        interests: ['Product Development', 'Risk Management', 'Board and Computer Games', 'Sports Mafia', 'Snowboarding'],
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
+        // projects: [
+        //     projectsInfo.vend, 
+        //     projectsInfo.gradGab
+        // ]
+    },
+    {
+        id: 8,
+        name: 'Anastasia Tkacheva',
+        photo: employeesImages.tkachevaPhoto,
+        avatar: employeesImages.tkachevaIcon,
+        position: 'Product Manager',
+        intro: 'Product manager with a business analysis background. She\'s interested in building good ' +
+                'processes and automating routing tasks using problem-solving approach.',
+        interests: ['Product analytics', 'Problem solving', 'Planning', 'Sport activities', 'Travelling'],
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'Fitness', 'Education', 'Media & Entertainment'],
+        // projects: [
+        //     projectsInfo.everyMother, 
+        //     projectsInfo.grandCentral
+        // ],
+    },
+    {
+        id: 9,
         name: 'Alexander Protasenya',
         photo: employeesImages.protasenyaPhoto,
         avatar: employeesImages.protasenyaIcon,
@@ -262,7 +344,27 @@ export const employeesInfo = [
         interests: ['Software development', 'Christianity', 'Quantum mechanics', 'Movie comics'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Backend development', 'DevOps', 'Software Architecture'],
-        projects: [projectsInfo.zeamo, projectsInfo.gradGab, projectsInfo.healthReveal],
+        // projects: [
+        //     projectsInfo.zeamo, 
+        //     projectsInfo.gradGab, 
+        //     projectsInfo.healthReveal
+        // ],
+    },
+    {
+        id: 10,
+        name: 'Safiko Abeslamidze',
+        photo: employeesImages.abeslamidzePhoto,
+        avatar: employeesImages.abeslamidzeIcon,
+        position: 'Backend developer',
+        intro: 'Software developer with a background in statistics and econometrics. Experience in ' +
+                'designing and building APIs, including 3rd-party integrations. Data analysis and ' +
+                'visualization skills using Python ML frameworks.  Good knowledge of GIT and agile practices.',
+        interests: ['Embedded systems programming', 'Skiing'],
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Backend development', 'Data analysis', 'Embedded systems'],
+        // projects: [
+        //     projectsInfo.healthReveal
+        // ],
     },
 ]
 

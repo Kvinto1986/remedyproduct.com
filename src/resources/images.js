@@ -66,14 +66,22 @@ import naganovPhoto from '../../static/images/photos/EgorNaganov-photo.png';
 import naganovIcon from '../../static/images/avatars/employees/EgorNaganov-icon.svg';
 import moliverIcon from '../../static/images/avatars/employees/IggyMoliver-icon.svg';
 import moliverPhoto from '../../static/images/photos/IggyMoliver.png';
-import krukIcon from '../../static/images/avatars/employees/OlegKruk.svg';
+import krukIcon from '../../static/images/avatars/employees/OlegKruk-icon.svg';
 import krukPhoto from '../../static/images/photos/OlegKrook.png';
-import zaytsevIcon from '../../static/images/avatars/employees/SergeyZaytsev.svg';
+import zaytsevIcon from '../../static/images/avatars/employees/SergeyZaytsev-icon.svg';
 import zaytsevPhoto from '../../static/images/photos/SergeyZaytsev.png';
-import kuzmichIcon from '../../static/images/avatars/employees/SergeyKuzmich.svg';
+import kuzmichIcon from '../../static/images/avatars/employees/SergeyKuzmich-icon.svg';
 import kuzmichPhoto from '../../static/images/photos/SergeyKuzmich.png';
-import protasenyaIcon from '../../static/images/avatars/employees/AlexanderProtasenya.svg';
+import protasenyaIcon from '../../static/images/avatars/employees/AlexanderProtasenya-icon.svg';
 import protasenyaPhoto from '../../static/images/photos/AlexanderProtasenya.png';
+import stogovPhoto from '../../static/images/photos/AlexanderStogov.png';
+import stogovIcon from '../../static/images/avatars/employees/AlexanderStogov-icon.svg';
+import korzhenevskayaPhoto from '../../static/images/photos/AnnaKorzhenevskaya.png';
+import korzhenevskayaIcon from '../../static/images/avatars/employees/AnnaKorzhenevskaya-icon.svg';
+import abeslamidzePhoto from '../../static/images/photos/SafikoAbeslamidze.png';
+import abeslamidzeIcon from '../../static/images/avatars/employees/SafikoAbeslamidze-icon.svg';
+import tkachevaPhoto from '../../static/images/photos/AnastasiaTkacheva.png';
+import tkachevaIcon from '../../static/images/avatars/employees/AnastasiaTkacheva-icon.svg';
 
 import teamPictureOne from '../../static/images/pictures/team-picture-1.png';
 import teamPictureTwo from '../../static/images/pictures/team-picture-2.png';
@@ -185,7 +193,15 @@ export const employeesImages = {
     zaytsevIcon,
     zaytsevPhoto,
     protasenyaIcon,
-    protasenyaPhoto
+    protasenyaPhoto,
+    stogovPhoto,
+    stogovIcon,
+    korzhenevskayaPhoto,
+    korzhenevskayaIcon,
+    abeslamidzePhoto,
+    abeslamidzeIcon,
+    tkachevaPhoto,
+    tkachevaIcon
 }
 
 export const toolsLogo = {
